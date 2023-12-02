@@ -21,7 +21,7 @@ export default function Header() {
   }
 
   return (
-    <header className="w-full dark:bg-dark-blue-elements-dark dark:shadow-md dark:shadow-slate-800 py-4 md:px-20 absolute left-0 top-0 px-4 shadow-gray-100 shadow-lg">
+    <header className="w-full dark:bg-dark-blue-elements-dark dark:shadow-sm dark:shadow-slate-800 py-4 md:px-20 absolute left-0 top-0 px-4 shadow-gray-200 shadow-sm">
       <nav className="w-full flex  justify-between items-center">
         <h2 className="text-2xl font-bold dark:text-white-color text-very-dark-blue-text-light">
           Where in the World?

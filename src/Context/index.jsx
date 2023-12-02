@@ -7,9 +7,12 @@ import { REGION_FILTER_WORDS } from "../services/regionFilterWords";
 export const CountriesContext = createContext();
 
 export default function CountriesProvider({ children }) {
-  const [countries, setCountries] = useState(data);
-  const [searchCountry, setSearchCountry] = useState("");
-  const [regionFilter, setRegionFilter] = useState("");
+  const [countries, setCountries] = useState(data)
+  const [searchCountry, setSearchCountry] = useState("")
+  const [regionFilter, setRegionFilter] = useState("")
+  const [infoCountry, setInfoCountry] = useState(null)
+
+  console.log(infoCountry);
 
   const filteredCountriesBySearch = countries.filter((country) => {
     return country.name.toLowerCase().includes(searchCountry.toLowerCase())
@@ -37,7 +40,6 @@ export default function CountriesProvider({ children }) {
     }
 
     if (regionFilter === REGION_FILTER_WORDS.none) {
-      console.log(countries);
       return countries
     }
 
@@ -54,7 +56,9 @@ export default function CountriesProvider({ children }) {
         filteredCountriesBySearch,
         regionFilter,
         setRegionFilter,
-        filterBy
+        filterBy,
+        infoCountry, 
+        setInfoCountry
       }}
     >
       {children}
