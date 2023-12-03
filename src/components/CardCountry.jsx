@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { CountriesContext } from "../Context";  
+import { CountriesContext } from "../Context"
 
 export default function CardCountry({ country }) {
   const { setInfoCountry, infoCountry } = useContext(CountriesContext)
@@ -14,11 +14,11 @@ export default function CardCountry({ country }) {
       <article
         onClick={handleClick}
         key={country.name}
-        className="cursor-pointer lg:w-full max-w-sm w-full h-80 dark:shadow-md dark:shadow-slate-800 bg-white  dark:bg-dark-blue-elements-dark flex flex-col rounded-lg shadow-gray-200 shadow-md"
+        className="cursor-pointer lg:w-full max-w-sm w-full h-[330px] dark:shadow-md dark:shadow-slate-800 bg-white  dark:bg-dark-blue-elements-dark flex flex-col rounded-lg shadow-gray-200 shadow-md"
       >
         <img
           src={country.flags.png}
-          className="w-full h-40 object-cover rounded-t-lg"
+          className="w-full h-48 object-cover rounded-t-lg"
           alt={`photo of ${country.name}`}
         />
         <div className="py-6 px-4">

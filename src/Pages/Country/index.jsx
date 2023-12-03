@@ -6,7 +6,7 @@ export default function Country() {
   return (
     <div className="pb-10 w-9/12 pt-14 m-auto">
       <Link to="/countries-app">
-        <button className="mb-14 gap-2 flex justify-center items-center dark:text-white text-lg font-medium w-28 h-9 rounded-md dark:shadow-md dark:shadow-slate-900 dark:bg-slate-800 shadow-gray-200 shadow-lg bg-white">
+        <button className="mb-14 gap-2 flex justify-center items-center dark:text-white text-lg font-medium w-28 h-9 rounded-md dark:shadow-md dark:shadow-slate-900 dark:bg-dark-blue-elements-dark shadow-gray-200 shadow-lg bg-white">
           <FaArrowLeft  />
           Back
         </button>

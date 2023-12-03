@@ -10,7 +10,7 @@ export default function CountrySearch() {
   }
 
   return (
-    <div className="bg-white md:w-96 dark:bg-dark-blue-elements-dark dark:text-white-color dark:shadow-md dark:shadow-slate-800 w-full px-6 h-12 py-4 flex items-center shadow-md shadow-gray-100 rounded-md">
+    <div className="bg-white md:mt-0 mt-5 md:w-96 dark:bg-dark-blue-elements-dark dark:text-white-color dark:shadow-md dark:shadow-slate-800 w-full px-6 h-12 py-4 flex items-center shadow-md shadow-gray-100 rounded-md">
       <span className="flex  justify-center items-center"></span>
       <FaSearch className="fill-dark-gray" />
       <div>
