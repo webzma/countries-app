@@ -4,7 +4,6 @@ import CountriesProvider from "../Context";
 import  { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../components/Layout";
 import Country from "../Pages/Country";
-import Navbar from "../components/Navbar";  
 
 function App() {
   return (

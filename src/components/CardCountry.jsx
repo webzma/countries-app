@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CountriesContext } from "../Context"
 
 export default function CardCountry({ country }) {
-  const { setInfoCountry, infoCountry } = useContext(CountriesContext)
+  const { setInfoCountry } = useContext(CountriesContext)
 
   function handleClick() {
     setInfoCountry(country)
