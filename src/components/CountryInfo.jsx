@@ -32,7 +32,9 @@ export function CountryInfo() {
               ))
             }
           </span>
-          <span className="font-semibold">Languages: <span className="font-light">{context.infoCountry?.languages?.name}</span></span>
+          <span className="font-semibold">Languages: {context.infoCountry?.languages?.map(language =>(
+            <span className="font-light" key={language.name}> {language.name}</span> 
+          ))}</span>
         </p>
       </div>
 
