@@ -13,7 +13,7 @@ export function CountryInfo() {
     <div className="gap-8 flex flex-col justify-center ">
       <h4 className="font-bold text-2xl dark:text-white-color">{context.infoCountry.name}</h4>
       
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         <p className="flex flex-col dark:text-white gap-2">
             <span className="font-semibold">Native name: <span className="font-light">{context.infoCountry?.nativeName}</span></span>
             <span className="font-semibold">Population: <span className="font-light">{context.infoCountry?.population}</span></span>
