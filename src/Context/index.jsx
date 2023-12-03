@@ -12,8 +12,6 @@ export default function CountriesProvider({ children }) {
   const [regionFilter, setRegionFilter] = useState("")
   const [infoCountry, setInfoCountry] = useState({})
 
-  console.log(countries);
-
   const filteredCountriesBySearch = countries.filter((country) => {
     return country.name.toLowerCase().includes(searchCountry.toLowerCase())
   });
